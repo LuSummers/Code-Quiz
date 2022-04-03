@@ -1,0 +1,55 @@
+section {
+    margin:100px;
+}
+
+.countdown {
+
+    border: 3px black solid;
+    float: right;
+}
+.box {
+    color: blueviolet;
+    font-size: 30px;
+    background-color: bisque;
+    height:500px;
+    width: 750px;
+    margin:auto;
+    border: 3px black solid;
+
+}
+.question {
+    padding: 40px;
+    text-align: center;
+    color: crimson;
+
+}
+.answer {
+   align-items: left;
+    color: black;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.answer-btn {
+  
+    color: coral;
+    background-color: chartreuse;
+    size: 10px;
+    font-size: 20px;
+   
+    padding: 10px;
+    margin:10px;
+   
+}
+.countdown-btn {
+    align-items: center;
+    color: coral;
+    background-color: chartreuse;
+    size: 30px;
+    font-size: 40px;
+    float:right;
+    padding: 10px;
+    margin:50px;
+   
+}
