@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./assets/css/style.css">
 <header>
-    <p id="countdown"> countdown</p>
+    <container>
+        <input class="storage" type="text">
+        <p class="text"></p>
+        <button class="button">Save</button>
+    </container>
+      <p id="countdown"> countdown</p>
 </header>
-<div id="frame001">
+<div id="quizbox">
     <div id="text001">
         <h2>Quiz</h2>
     
-        Question: <text id="number001">0</text><br />
-        Score: <text id="score001">0</text>
+        Question: <text id="number">0</text><br />
+        Score: <text id="Score">0</text>
     <hr />
             <div id="message001">Click Begin to start</div><br />
         </div>
@@ -28,6 +33,7 @@
             <div id="disappear001"><button class="button1" onclick="begin001()">Begin</button></div>
         </div>
         <div id="next001"></div>
+   
    <script src="assets/js/script.js"></script>
     </div>
     </div>

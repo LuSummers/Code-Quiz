@@ -1,4 +1,5 @@
 
+//question array
 
 var q = [
   "What is the abbreviation for Javascript<br /><br />", 
@@ -12,6 +13,7 @@ var q = [
   "If Java counts positions from zero, what is the first position in a string?<br /><br />", 
   "The + operator can be used between strings to combine them. This is also called _____ .<br /><br />"];
  
+  //answer array
  var a1 = ["<button class= button2 onclick=q1c()> JS </button>",
            "<button class= button2 onclick=q2c()> Array </button>",
            "<button class= button2 onclick=q3c()> string </button>",
@@ -56,6 +58,7 @@ var q = [
            "<button class= button2 onclick=q9c()> 0 </button>",
            "<button class= button2 onclick=q10c()> concatenation </button>"];
  
+  //response to correct or incorrect entries
  var c = ["Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct"];
  var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
  
@@ -63,9 +66,10 @@ var q = [
  n++;
  var s = 0;
  s++;
- 
+ //time count
  var count = 30;
  
+ //function to end the quiz and start over
  function end001() {
      message001.innerHTML = "End of Quiz.";
      question001.innerHTML = "";
@@ -76,7 +80,7 @@ var q = [
      next001.innerHTML = "<div id=text001>" + "<button class=button1 onclick=repeat001()>Repeat</button>" + "</div>";
      answer001.innerHTML = "";}
  
- 
+ //function to start quiz and initiate timer
  function begin001() {
      disappear001.innerHTML = "";
      message001.innerHTML = "";
@@ -85,7 +89,7 @@ var q = [
      answerbtn2.innerHTML = a2[0];
      answerbtn3.innerHTML = a3[0];
      answerbtn4.innerHTML = a4[0];
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
      var count = 30;
      var interval = setInterval(function(){
    document.getElementById('countdown').innerHTML=count;
@@ -108,7 +112,9 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest2()>Next</button>";
-     score001.innerHTML = s++;
+
+     //increments score
+     Score.innerHTML = s++;
  }
  
  function q1i() {
@@ -117,6 +123,7 @@ var q = [
      answerbtn2.innerHTML = "";
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
+     //decreases time and prompts next question
      countdown.innerHTML = count - 5;
      next001.innerHTML = "<button class=button1 onclick=quest2()>Next</button>";
  
@@ -130,7 +137,7 @@ var q = [
      answerbtn4.innerHTML = a4[1];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q2c() {
@@ -140,7 +147,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest3()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q2i() {
@@ -162,7 +169,7 @@ var q = [
      answerbtn4.innerHTML = a4[2];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q3c() {
@@ -172,7 +179,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest4()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q3i() {
@@ -194,7 +201,7 @@ var q = [
      answerbtn4.innerHTML = a4[3];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q4c() {
@@ -204,7 +211,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest5()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q4i() {
@@ -226,7 +233,7 @@ var q = [
      answerbtn4.innerHTML = a4[4];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q5c() {
@@ -236,7 +243,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest6()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q5i() {
@@ -258,7 +265,7 @@ var q = [
      answerbtn4.innerHTML = a4[5];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q6c() {
@@ -268,7 +275,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest7()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q6i() {
@@ -291,7 +298,7 @@ var q = [
      answerbtn4.innerHTML = a4[6];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q7c() {
@@ -301,7 +308,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest8()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q7i() {
@@ -323,7 +330,7 @@ var q = [
      answerbtn4.innerHTML = a4[7];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q8c() {
@@ -333,7 +340,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest9()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q8i() {
@@ -355,7 +362,7 @@ var q = [
      answerbtn4.innerHTML = a4[8];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q9c() {
@@ -365,7 +372,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=quest10()>Next</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q9i() {
@@ -387,7 +394,7 @@ var q = [
      answerbtn4.innerHTML = a4[9];
      next001.innerHTML = "";
      answer001.innerHTML = "";
-     number001.innerHTML = n++;
+     number.innerHTML = n++;
  }
  
  function q10c() {
@@ -397,7 +404,7 @@ var q = [
      answerbtn3.innerHTML = "";
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<button class=button1 onclick=end001()>End of Quiz</button>";
-     score001.innerHTML = s++;
+     Score.innerHTML = s++;
  }
  
  function q10i() {
@@ -408,6 +415,7 @@ var q = [
      answerbtn4.innerHTML = "";
      countdown.innerHTML = count - 5;
      next001.innerHTML = "<button class=button1 onclick=end001()>End of Quiz</button>";
+     window.prompt = "enter name";
       
  
  }
@@ -421,7 +429,22 @@ var q = [
      answerbtn4.innerHTML = "";
      next001.innerHTML = "<div id=text001>" + "<button class=button1 onclick=repeat001()>Repeat</button>" + "</div>";
      answer001.innerHTML = "";
- 
+     //local storage
+     const storageInput =document.querySelector('.storage');
+     const text = document.querySelector('.text');
+     const button = document.querySelector('.button');
+     const storedInput = localStorage.getItem('textinput')
+     
+     if (storageInput){
+       text.textContent = storedInput
+     }
+     storageInput.addEventListener('input', letter => {
+       text.textContent = letter.target.value
+     })
+     const saveToLocalStorage = () => {
+       localStorage.setItem('textinput', text.textContent)}
+     
+       button.addEventListener('click', saveToLocalStorage)
      
  }
  
