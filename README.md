@@ -1,4 +1,4 @@
-# Code-Quiz# passwordGenerator
+# Code-Quiz
 
 ## Purpose
 This website contains a Javascript quiz where you will recieve instant feedback for right and wrong answers.
